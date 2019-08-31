@@ -1,7 +1,7 @@
 # Arvan-Whitelist
 Update [ArvanCloud](https://www.arvancloud.com/en) IPs whitelist for [CSF](https://configserver.com/cp/csf.html) - [DirectAdmin](https://www.directadmin.com/)/[cPanel](https://cpanel.net/)
 
-Auomatic update from ArvanCloud:
+Automatic update from ArvanCloud:
 https://arvancloud.com/ips.txt
 
 # Run :

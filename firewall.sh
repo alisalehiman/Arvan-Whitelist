@@ -15,7 +15,7 @@ echo "Downloading new IPs From ArvanCloud ..."
 wget -O /tmp/arvan_new_ips_$RUNTIME_DATE.txt "https://arvancloud.com/ips.txt"
 
 echo "Adding new IPs to csf allow file ..."
-input="/tmp/arvan.txt"
+input="/tmp/arvan_new_ips_$RUNTIME_DATE.txt"
 echo "##start-arvan-ip" >> /etc/csf/csf.allow
 while IFS= read -r line
 do
@@ -31,7 +31,7 @@ fi
 
 echo "##end-arvan-ip" >> /etc/csf/csf.allow
 
-echo "Restarting csf ..."
+echo "Restarting CSF ..."
 csf -r
 
 if [ $? -ne 0 ]
