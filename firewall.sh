@@ -24,7 +24,7 @@ done < "$input"
 
 if [ $? -ne 0 ]
 then
-    echo 'Added new IPs to csf allow file successfully.'
+    echo "Added new IPs to csf allow file successfully."
 else
     echo "Couldn't add new IPs to /etc/csf/csf.allow."
 fi
@@ -36,14 +36,14 @@ csf -r
 
 if [ $? -ne 0 ]
 then
-    echo 'ArvanCloud IPs in CSF have been updated successfully. Done!'
+    echo "ArvanCloud IPs in CSF have been updated successfully. Done!"
 else
     echo "Couldn't restart CSF, trying to start and stop it ..."
     csf -f && csf -s
     if [ $? -ne 0 ]
       then
-      echo 'Now good to go, ArvanCloud IPs in CSF have been updated successfully. Done!'
+      echo "Now good to go, ArvanCloud IPs in CSF have been updated successfully. Done!"
     else
-    echo "Couldn't start CSF, please check out logs for error ..."
+      echo "Couldn't start CSF, please check out logs for error ..."
     fi
 fi
