@@ -1,7 +1,7 @@
 # Arvan-Whitelist
-Abrarvan Whitelist IP Update for CSF - Directadmin/Cpanel
+Arvan Whitelist IP Update for CSF - Directadmin/Cpanel
 
-Auomatic update From Abravan:
+Auomatic update From Arvan:
 https://arvancloud.com/ips.txt
 
 # Run :
@@ -12,3 +12,4 @@ wget https://github.com/alisalehiman/Arvan-Whitelist/raw/master/firewall.sh
 chmod +x firewall.sh
 
 ./firewall.sh
+
