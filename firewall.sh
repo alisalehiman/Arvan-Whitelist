@@ -6,7 +6,7 @@ sed -i '/##start-arvan-ip/,/##end-arvan-ip/d' /etc/csf/csf.allow
 
 
 echo "Downloading new IPs From ArvanCloud ..."
-wget -O /tmp/arvan_new_ips_$RUNTIME_DATE.txt "https://arvancloud.com/ips.txt"
+wget -O /tmp/arvan_new_ips_$RUNTIME_DATE.txt "https://www.arvancloud.com/fa/ips.txt"
 
 echo "Adding new IPs to csf allow file ..."
 input="/tmp/arvan_new_ips_$RUNTIME_DATE.txt"
